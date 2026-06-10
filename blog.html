@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-raw-concrete">
+<meta name="description" content="여의도 노래방 블로그. 가격, 시설, 서비스 솔직 리뷰. 거품 가득한 여의도 노래방의 민낯을 까발린다.">
+<meta name="keywords" content="여의도 노래방 블로그, 여의도 노래방 리뷰, 여의도 노래방 가격 비교, 여의도 노래방 솔직 후기, 여의도 코인노래방 단점">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://t3b05-yd-kb-info-1.vercel.app/blog">
+<meta property="og:title" content="여의도 노래방 블로그 | 거품주의 | 전화 010-6279-0862">
+<meta property="og:description" content="여의도 노래방의 현실을 있는 그대로 까발린다. 가격 대비 별로? 시설 별로? 직접 부딪혀 본 썰 푼다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://t3b05-yd-kb-info-1.vercel.app/blog">
+<meta name="twitter:card" content="summary_large_image">
+
+<title>블로그 | 여의도 노래방 정보 RAW & REAL</title>
+
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ===== BRUTALIST RAW TEXTURES ===== */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px),
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(255,255,255,0.02) 2px, rgba(255,255,255,0.02) 4px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 0 #000;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  border-left: 6px solid #ff4500;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 48px;
+  border-bottom: 3px solid #ff4500;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+}
+
+a {
+  color: #ff4500;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+a:hover, a:focus {
+  color: #ff6347;
+  border-bottom-color: #ff4500;
+}
+
+/* ===== LAYOUT ===== */
+.layout-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Navigation */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 2px solid #ff4500;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.nav-logo a {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #f0f0f0;
+  border-bottom: none;
+}
+
+.nav-logo a:hover {
+  color: #ff4500;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #ccc;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ff4500;
+  border-bottom-color: #ff4500;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #f0f0f0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ===== HERO / PAGE HEADER ===== */
+.page-header {
+  margin-bottom: 64px;
+}
+
+.page-header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+  max-width: 650px;
+}
+
+/* ===== BLOG CONTENT ===== */
+.blog-post {
+  background: #222;
+  padding: 32px 28px;
+  border-left: 6px solid #ff4500;
+  margin-bottom: 48px;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+  border-bottom: none;
+}
+
+.blog-post .article-meta {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.blog-post p {
+  margin-bottom: 1.2em;
+  font-size: 1.05rem;
+  color: #cdcdcd;
+}
+
+.blog-post .highlight-box {
+  background: #2a2a2a;
+  border: 2px dashed #ff4500;
+  padding: 20px;
+  margin: 24px 0;
+  font-weight: 700;
+  color: #ff6347;
+}
+
+.blog-post .btn-tel {
+  display: inline-block;
+  background: #ff4500;
+  color: #111;
+  padding: 12px 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.blog-post .btn-tel:hover {
+  background: #ff6347;
+  color: #000;
+}
+
+/* ===== SIDEBAR / EXTRA ===== */
+.sidebar-box {
+  background: #1e1e1e;
+  border: 2px solid #333;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.sidebar-box h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #ff4500;
+}
+
+.sidebar-box ul {
+  list-style: square;
+  padding-left: 24px;
+  color: #bbb;
+}
+
+.sidebar-box ul li {
+  margin-bottom: 8px;
+}
+
+.sidebar-box ul li a {
+  color: #ddd;
+  font-weight: 400;
+  border-bottom: 1px dotted #555;
+}
+
+.sidebar-box ul li a:hover {
+  color: #ff4500;
+  border-bottom-color: #ff4500;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  border-top: 2px solid #ff4500;
+  padding: 32px 0;
+  margin-top: 80px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #aaa;
+  border-bottom: 1px dotted #555;
+}
+
+.footer a:hover {
+  color: #ff4500;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  html { font-size: 14px; }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1a1a1a;
+    border: 2px solid #ff4500;
+    padding: 16px;
+    margin-top: 12px;
+    gap: 16px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+
+  .blog-post {
+    padding: 24px 20px;
+  }
+}
+
+/* ===== TEL LINK FIX ===== */
+.tel-link {
+  color: #ff4500;
+  font-weight: 900;
+  font-size: 1.2rem;
+  border-bottom: none;
+}
+
+.tel-link:hover {
+  color: #ff6347;
+}
+</style>
+</head>
+<body>
+
+<div class="layout-wrapper">
+
+  <!-- Navigation identical to previous -->
+  <nav class="nav-bar">
+    <div class="nav-logo"><a href="/">여의도 KB</a></div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/">홈</a></li>
+      <li><a href="/pricing">가격</a></li>
+      <li><a href="/reviews">리뷰</a></li>
+      <li><a href="/blog" class="active">블로그</a></li>
+      <li><a href="/contact">문의</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <h1>블로그</h1>
+    <p>여의도 노래방의 현실을 있는 그대로. 가식 없는 리뷰, 가격 비교, 꿀팁. 한 줄 한 줄이 너의 선택을 바꾼다.</p>
+  </div>
+
+  <!-- Main Content: Blog Post -->
+  <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+
+    <!-- Blog Post Article -->
+    <div class="blog-post" style="flex: 2 1 600px;">
+      <span class="article-meta">2025.03.28 | by 여의도 브로</span>
+      <h2>여의도 노래방, 솔직히 거품 심하지 않냐?</h2>
+
+      <p>야. 여의도에서 노래방 한 번쯤 가봤지? 근데 왜 느껴지는 이 찝찝함. 가격은 쳐 올라가고 시설은 그대로고. "여의도 노래방" 검색하면 다 비슷비슷한 후기. <strong>근데 진짜 하는 말은 하나도 없어.</strong></p>
+
+      <p>내가 직접 3군데 돌아다니고 겪은 썰 풀어본다. 첫째, <strong>기본 2만원대</strong>는 기본이야. 1시간에 코인노래방? 그건 20분짜리 3000원짜리도 있지만, 제대로 부르려면 방 잡아야지. 근데 방 잡으면 2만원 훌쩍. 거기다 음료 하나 시키면 3만원. <em>야, 이게 맞냐?</em></p>
+
+      <div class="highlight-box">
+        💥 현실: 2인 기준 1시간 + 음료 2잔 = 평균 35,000원. 근데 마이크 상태? 개판인 곳 허다함.
+      </div>
+
+      <p>두 번째, <strong>시설 문제</strong>. 리모컨 고장, 스피커 찢어짐, 마이크선 꼬임. "리뉴얼 했습니다"는 말만 믿고 갔는데 새거라고 하기엔 너무 험한 꼴. 여의도 노래방 정보 어디서 찾아도 "깔끔하다"는 말은 많아도 "진짜 깔끔하다"는 말은 드물어. 왜? 거기 가보면 알게 됨.</p>
+
+      <p>세 번째, <strong>서비스</strong>. 주인 아저씨가 "반갑습니다" 하는 곳은 거의 없고, 기계로 결제하고 들어가는 시스템. 사람 냄새 안 나. 물론 가성비를 원하면 코인노래방이 정답이지만, 1시간 내내 노래 부르려면? 그건 아니잖아.</p>
+
+      <p>그래도 <strong>꿀팁</strong> 하나 준다. 여의도에서 <strong>진짜 괜찮은 곳</strong> 몇 군데 있는데, 그중 하나는 전화로 미리 예약하면 가격 흥정 가능한 곳도 있어. 번호는 <a href="tel:01062790862" class="tel-link">010-6279-0862</a>. 여기 부르면 "아, 블로그 보고 왔어" 하면 좀 깎아준다. 내가 보증한다. 대신 예약 필수.</p>
+
+      <p>결론: 여의도 노래방, 돈 아깝지 않게 고르는 법? <strong>검증된 곳만 가라.</strong> 그리고 미리 전화해라. 현장발로 뛰는 것보다 전화 한 통이 열 배 낫다. <a href="tel:01062790862" class="btn-tel">📞 전화로 예약하기</a></p>
+    </div>
+
+    <!-- Sidebar with extra info -->
+    <div style="flex: 1 1 280px;">
+      <div class="sidebar-box">
+        <h3>⚡ 여의도 노래방 비교</h3>
+        <ul>
+          <li><a href="/pricing">가격 비교 바로가기</a></li>
+          <li><a href="/reviews">실제 리뷰 모음</a></li>
+          <li><a href="tel:01062790862">전화 예약 (010-6279-0862)</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-box">
+        <h3>🔥 최신 글</h3>
+        <ul>
+          <li><a href="/blog">여의도 노래방 거품 분석</a></li>
+          <
+</body>
+</html>
